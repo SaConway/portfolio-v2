@@ -61,11 +61,13 @@ h2 {
   font-size: var(--fs-lg-title);
   color: var(--clr-accent);
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .intro__subtitle {
   font-size: var(--fs-title);
   letter-spacing: 2px;
+  margin-top: 0.25em;
 }
 
 .project-preview {

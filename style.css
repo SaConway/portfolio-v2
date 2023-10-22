@@ -9,20 +9,24 @@
 :root {
   --clr-bg: #0e0c16;
   --clr-text: #f9f9f9;
-  --clr-accent: #5817de;
+  --clr-accent: #9852ff;
   --clr-title: #988e9f;
-  --clr-social: #5918df;
+  --clr-social: #c57aff;
 
   --fs-lg-title: clamp(48px, 8vw, 120px);
-  --fs-title: 24px;
-  --fs-text: 16px;
+  --fs-title: 2.4rem;
+  --fs-text: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   background-color: var(--clr-bg);
   color: var(--clr-text);
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-text);
   line-height: 1.4;
   letter-spacing: 2px;
 }
@@ -43,7 +47,7 @@ h2 {
 
 .container {
   width: 80%;
-  max-width: 1100px;
+  max-width: 110rem;
   margin: 8rem auto;
 }
 
@@ -60,6 +64,7 @@ h2 {
 .intro__title {
   font-size: var(--fs-lg-title);
   color: var(--clr-accent);
+  background-color: var(--clr-bg);
   text-transform: uppercase;
   line-height: 1;
 }
@@ -95,8 +100,8 @@ h2 {
 
 .social__icon {
   fill: var(--clr-social);
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   margin-right: 0.5em;
 }
 
@@ -108,7 +113,7 @@ h2 {
   .project-item:hover {
     position: relative;
     color: var(--clr-accent);
-    transform: translateX(10px);
+    transform: translateX(1rem);
   }
 
   .project-item:hover .project-preview {
@@ -139,11 +144,11 @@ h2 {
   }
 
   .social__item:hover::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -0.25em;
     right: 0;
-    height: 2px;
+    height: 0.2rem;
     background-color: var(--clr-text);
     animation: slide-in 375ms ease-in-out forwards;
   }
@@ -158,7 +163,7 @@ h2 {
     }
 
     to {
-      width: 20px;
+      width: 2rem;
     }
   }
 
